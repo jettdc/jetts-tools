@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
-
+from jettools.version import VERSION
 with open('README.md') as f:
     readme = f.read()
 
 setup(
     name='jetts-tools',
-    version='0.0.8',
+    version=VERSION,
     author='Jett Crowson',
     author_email='jettcrowson@gmail.com',
     url='https://github.com/jettdc/jetts-tools',
@@ -15,5 +15,6 @@ setup(
     license='MIT',
     packages=['jettools'],
     keywords='python tools utils',
-    python_requires='>=3.5'
+    python_requires='>=3.5',
+    install_requires=['barb', 'python-dotenv']
 )
